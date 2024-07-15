@@ -1,6 +1,10 @@
 import { Entypo } from "@expo/vector-icons";
 import { Tabs } from "expo-router";
 import { MaterialIcons } from "@expo/vector-icons";
+import { MaterialCommunityIcons } from "@expo/vector-icons";
+import { FontAwesome6 } from "@expo/vector-icons";
+
+
 
 export default function TabLayout() {
   return (
@@ -21,12 +25,18 @@ export default function TabLayout() {
      />
      <Tabs.Screen name="cart" 
      options={{
-      tabBarIcon:({size,color})=> {
-        return<Entypo cart={""} size={25}/>
-      },
-     }} 
+      tabBarIcon:({size, color})=> (
+        <MaterialCommunityIcons name={"cart"} size={size} color={color} />
+      ),
+   }} 
      />
-     <Tabs.Screen name="account" />
+     <Tabs.Screen name="account" 
+      options={{
+      tabBarIcon:({size, color})=> (
+        <FontAwesome6 name={"user"} size={size} color={color} />
+      ),
+   }} 
+   />
     </Tabs>
   );
 }
