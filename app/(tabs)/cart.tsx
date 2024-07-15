@@ -15,6 +15,7 @@ const styles = StyleSheet.create({
   nametext: {
     fontSize: 30,
     color: 'black',
+    
   },
   input: {
     height: 40,
