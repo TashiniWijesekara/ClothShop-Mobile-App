@@ -1,42 +1,21 @@
-import { View ,Text , StyleSheet ,Image } from "react-native";
-import React from "react";
-import Icon from 'react-native-vector-icons/FontAwesome';
-import AntDesign from 'react-native-vector-icons/AntDesign';
-import { red } from "react-native-reanimated/lib/typescript/reanimated2/Colors";
+import { View ,Text , StyleSheet, TextInput ,Image } from "react-native";
+import React from 'react'
+import LinearGradient from "react-native-linear-gradient";
+import Header from "../../components/Header";
 
-export default function Index() {
+const Home = () => {
   return (
-    // Home page
     <View>
-      <Text style={styles.nametext}>Select Your Style</Text>
-
-      <Image style={styles.tinyLogo}
-        // source={{
-        //   uri: 'https://reactnative.dev/img/tiny_logo.png',
-        // }}
-      />
+      <Header/>
     </View>
-  )
-}
+  );
+};
+
+export default Home;
 
 const styles = StyleSheet.create({
-  nametext: {
-    fontSize: 30,
-    color: 'black',
-    // justifyContent: "center",
-    // alignItems: "center",
-    
+  container:{
+    flex: 1,
+    padding: 20,
   },
-  input: {
-    height: 40,
-    margin: 12,
-    borderWidth: 1,
-    padding: 10,
-  },
-  
-  tinyLogo: {
-    width: 50,
-    height: 50,
-  },
-})
-
+});
