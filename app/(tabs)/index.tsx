@@ -11,7 +11,7 @@ const Index = ()=> {
     // Home page or loging page 1
     <View>
       {Object.entries(dimensions).map(([key, value]) => (
-      <View key={key} style={{ width, height, backgroundColor: 'white', display: 'flex', alignItems: 'center'}}>
+      <View key={key} style={{ width, height, backgroundColor: '#FCEEF2', display: 'flex', alignItems: 'center'}}>
         
       <Text></Text>
       <Text style={styles.nametext}>{"\n"} ZANY Clothing </Text>

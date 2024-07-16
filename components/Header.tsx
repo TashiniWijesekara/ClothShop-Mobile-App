@@ -23,8 +23,9 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         justifyContent: "space-between",
         alignItems: "center",
+        // marginTop: 1,
     },
-
+        //app icon round
     appIconContainer: {
         backgroundColor: "white",
         height: 44,
@@ -32,16 +33,19 @@ const styles = StyleSheet.create({
         borderRadius: 22,
         justifyContent: "center",
         alignItems: "center",
+        marginStart:14,
     },
 
     appIcon: {
-        height: 28,
-        width: 28,
+        height: 44,
+        width: 44,
+        
     },
 
     dp: {
         height: 44,
         width: 44,
         borderRadius: 22,
+        marginEnd:13,
     },
 });
