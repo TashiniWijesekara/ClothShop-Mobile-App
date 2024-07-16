@@ -4,7 +4,7 @@ import React from 'react'
 export default function cart() {
   return (
     <View>
-      <Text style={styles.nametext}>My Cart</Text>
+      <Text style={styles.nametext}> {"\n"} My Cart</Text>
       <TextInput style={styles.input} placeholder="Enter your name" />
       
     </View>
