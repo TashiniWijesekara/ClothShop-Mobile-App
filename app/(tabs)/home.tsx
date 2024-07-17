@@ -38,6 +38,16 @@ const Home = () => {
         <View 
             style={{
               flexDirection: "row",
+              // justifyContent:  "space-between",
+            }}
+            >
+          <ProductCart/>
+          <ProductCart/>
+        </View>
+        <View 
+            style={{
+              flexDirection: "row",
+              // justifyContent:  "space-between",
             }}
             >
           <ProductCart/>
@@ -58,6 +68,7 @@ const styles = StyleSheet.create({
     fontSize: 25,
     color: '#FE6C92',
     marginTop: 25,
+    marginLeft: 18,
     // fontFamily:
   },
 
