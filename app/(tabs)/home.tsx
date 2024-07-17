@@ -6,22 +6,27 @@ import Category from '@/components/Category'
 import ProductCart from '@/components/ProductCart'
 
 const categories = ["Trendig Now","All","New","Mens","Womens"];
+
 const Home = () => {
-  const[ selectedCategory,setSelectedCategory] = useState(null);
+    // const [products, setProducts] = useState(data.products);
+    const [ selectedCategory,setSelectedCategory] = 
+    useState("Mens");
+    const [isLiked,setIsLiked] = useState(false);
   return (
     <View style={{height:'100%',backgroundColor: '#FCEEF2',paddingTop:70 }}>
       <Header/>
-      <Text style={styles.topicText}>Choose Your Style</
-      Text>
 
       {/* product list */}
       <FlatList 
           numColumns={2}
           ListHeaderComponent={
             <>
+            <Text style={styles.topicText}>Choose Your Style</Text>
             {/* input container */}
           <View style={styles.inputContainer}>
           <View style= {styles.iconContainer}>
+
+            {/* search bar */}
           <Fontisto name={"search"} size={22} color={"gray"} />
         </View>
          <TextInput style={styles.textInput} 
@@ -40,13 +45,17 @@ const Home = () => {
           keyExtractor={(item)=>item}
           horizontal={true}
           showsHorizontalScrollIndicator={false}
-
           />
-            </>
+        </>
           }
-          data={[1,2,3,4,5,6]} 
-          renderItem={ProductCart}
-          
+          data={[1, 2, 3, 4, 5, 6]} 
+          renderItem={({item,index})=> (
+          <ProductCart item={item} isLiked={isLiked} setIsLiked={setIsLiked} />
+           )}
+          showsVerticalScrollIndicator={false}
+          contentContainerStyle={{
+            paddingBottom: 50,
+          }}
           />
       
         {/* <View 
@@ -84,7 +93,7 @@ const styles = StyleSheet.create({
   topicText: {
     fontSize: 25,
     color: '#FE6C92',
-    marginTop: 25,
+    marginTop: 10,
     marginLeft: 18,
     // fontFamily:
   },
@@ -97,6 +106,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     flexDirection: "row",
     marginVertical: 20,
+    marginLeft: 10,
+    marginEnd: 10,
   },
  //search icon
  iconContainer: {

@@ -2,19 +2,26 @@ import { StyleSheet, Text, View , Image , TouchableOpacity } from 'react-native'
 import React, { useState } from 'react'
 import { AntDesign } from '@expo/vector-icons';
 
-const ProductCart = () => {
-  const isLiked = true;
+const ProductCart = ({ item, isLiked, setIsLiked}) => {
   // const[isLiked, setIsLiked] = useState(false);
   return (
     <View style={styles.container}>
-      <Image source={require("../assets/images/YelooOutFit.png")}
+      <Image source={require("../assets/images/YelooOutFit.png")} 
        style={styles.firstImg}/>
        <View style={styles.content}>
           <Text style={styles.title}>Full Kit</Text>
-          <Text style={styles.price}>LKR 6,850.00</Text>
+          <Text style={styles.price}>LKR 9,850.00</Text>
        </View>
+      {/* <Image source={require("../assets/images/YelooOutFit.png")}
+       style={styles.firstImg}/>
+       <View style={styles.content}>
+          <Text style={styles.title}>Full Kit</Text>
+          <Text style={styles.price}>LKR 9,850.00</Text>
+       </View> */}
+
+       
        {/* heart like container */}
-       <TouchableOpacity onPress={() => {}} style=
+       <TouchableOpacity onPress={() => {setIsLiked (!isLiked)}} style=
           {styles.likeContainer}>
           { isLiked ? (
             <AntDesign name={"heart"} size={20} color={"#FE6C92"}/>
@@ -31,8 +38,8 @@ export default ProductCart;
 const styles = StyleSheet.create({
   container: {
       flex: 1,
-      marginTop: 10,
-      position: "relative",
+      marginTop: 20,
+      //position: "relative",
       // borderWidth: 1,
       // borderColor: "black",
   },
@@ -56,7 +63,7 @@ const styles = StyleSheet.create({
       marginLeft: 18,
     },
     content: {
-      paddingLeft: 20,
+      paddingLeft: 10,
     },
     likeContainer: {
         height: 34,
