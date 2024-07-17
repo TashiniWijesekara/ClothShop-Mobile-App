@@ -3,7 +3,8 @@ import React, { useState } from 'react'
 import { AntDesign } from '@expo/vector-icons';
 
 const ProductCart = () => {
-  const[isLiked, setIsLiked] = useState(false);
+  const isLiked = true;
+  // const[isLiked, setIsLiked] = useState(false);
   return (
     <View style={styles.container}>
       <Image source={require("../assets/images/YelooOutFit.png")}
@@ -13,11 +14,9 @@ const ProductCart = () => {
           <Text style={styles.price}>LKR 6,850.00</Text>
        </View>
        {/* heart like container */}
-       <TouchableOpacity 
-          onPress={()=>setIsLiked(!isLiked)} 
-          style={styles.likeContainer}
-          >
-          { isLiked? (
+       <TouchableOpacity onPress={() => {}} style=
+          {styles.likeContainer}>
+          { isLiked ? (
             <AntDesign name={"heart"} size={20} color={"#FE6C92"}/>
           ) : (
           <AntDesign name={"hearto"} size={20} color={"#FE6C92"}/>

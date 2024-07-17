@@ -11,16 +11,24 @@ const Home = () => {
   return (
     <View style={{height:'100%',backgroundColor: '#FCEEF2',paddingTop:70 }}>
       <Header/>
-      <Text style={styles.topicText}>Choose Your Style</Text>
-      <View style={styles.inputContainer}>
-      <View style= {styles.iconContainer}>
+      <Text style={styles.topicText}>Choose Your Style</
+      Text>
+
+      {/* product list */}
+      <FlatList 
+          numColumns={2}
+          ListHeaderComponent={
+            <>
+            {/* input container */}
+          <View style={styles.inputContainer}>
+          <View style= {styles.iconContainer}>
           <Fontisto name={"search"} size={22} color={"gray"} />
         </View>
-         <TextInput style={styles.textInput} placeholder="search"/>
+         <TextInput style={styles.textInput} 
+         placeholder="search"/>
      </View>
-
-     {/* category section */}
-     <FlatList 
+            {/* category section */}
+          <FlatList 
           data={categories} 
           renderItem={({item}) =>( 
             <Category 
@@ -34,8 +42,26 @@ const Home = () => {
           showsHorizontalScrollIndicator={false}
 
           />
-      {/* product list */}
-        <View 
+            </>
+          }
+          data={[1,2,3,4,5,6]} 
+          renderItem={ProductCart}
+          
+          />
+      
+        {/* <View 
+            style={{
+              flexDirection: "row",
+              // justifyContent:  "space-between",
+            }}
+       >
+          <ProductCart/>
+          <ProductCart/>
+        </View> */}
+
+        {/* product list */}
+      
+        {/* <View 
             style={{
               flexDirection: "row",
               // justifyContent:  "space-between",
@@ -43,16 +69,7 @@ const Home = () => {
             >
           <ProductCart/>
           <ProductCart/>
-        </View>
-        <View 
-            style={{
-              flexDirection: "row",
-              // justifyContent:  "space-between",
-            }}
-            >
-          <ProductCart/>
-          <ProductCart/>
-        </View>
+        </View> */}
 
     </View> //lineGardient
   );
