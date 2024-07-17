@@ -6,7 +6,8 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 export default function account() {
   return (
     <View>
-      <Text>account</Text>
+      <Text></Text>
+      <Text>Account</Text>
     </View>
   )
 }

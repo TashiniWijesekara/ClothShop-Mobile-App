@@ -2,7 +2,6 @@ import { View,Dimensions ,Text , StyleSheet ,Image , Button  } from "react-nativ
 import React from "react";
 import { Link, router } from 'expo-router';
 
-
 const Index = ()=> {
   const dimensions = Dimensions.get('window');
   const { width, height } = dimensions;

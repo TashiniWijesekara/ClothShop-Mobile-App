@@ -1,36 +1,50 @@
-import { View ,Text , StyleSheet, TextInput ,Image ,FlatList } from "react-native";
-import React from 'react'
-import LinearGradient from "react-native-linear-gradient";
-import Header from "../../components/Header";
-import { Fontisto } from "@expo/vector-icons";
-import Category from "../../components/Category";
+import { StyleSheet, Text,TextInput, View , FlatList } from 'react-native'
+import React, { useState } from 'react'
+import Header from '@/components/Header'
+import { Fontisto } from '@expo/vector-icons'
+import Category from '@/components/Category'
+import ProductCart from '@/components/ProductCart'
 
-const categories = ['Trendig Now','All','New','Mens','Womens']
+const categories = ["Trendig Now","All","New","Mens","Womens"];
 const Home = () => {
+  const[ selectedCategory,setSelectedCategory] = useState(null);
   return (
-    <View style={{height:'100%',backgroundColor: '#FCEEF2',paddingTop:70 }}>  
+    <View style={{height:'100%',backgroundColor: '#FCEEF2',paddingTop:70 }}>
       <Header/>
-      <Text style={styles.topicText}>Choose Your Style </Text>
-
-       <View style={styles.inputContainer}>
-        <View style= {styles.iconContainer}>
+      <Text style={styles.topicText}>Choose Your Style</Text>
+      <View style={styles.inputContainer}>
+      <View style= {styles.iconContainer}>
           <Fontisto name={"search"} size={22} color={"gray"} />
         </View>
          <TextInput style={styles.textInput} placeholder="search"/>
-       </View>
+     </View>
 
-
-      {/* category section */}
-      <FlatList 
+     {/* category section */}
+     <FlatList 
           data={categories} 
-          renderItem={Category} 
+          renderItem={({item}) =>( 
+            <Category 
+                item={item} 
+                selectedCategory={selectedCategory} 
+                setSelectedCategory={setSelectedCategory}
+                />
+              )} 
           keyExtractor={(item)=>item}
           horizontal={true}
+          showsHorizontalScrollIndicator={false}
+
           />
+      {/* product list */}
+        <View 
+            style={{
+              flexDirection: "row",
+            }}
+            >
+          <ProductCart/>
+          <ProductCart/>
+        </View>
 
-      <Category />
-
-    </View>
+    </View> //lineGardient
   );
 };
 
@@ -38,7 +52,6 @@ export default Home;
 
 const styles = StyleSheet.create({
   container:{
-    flex: 1,
     padding: 20,
   },
   topicText: {
@@ -47,6 +60,7 @@ const styles = StyleSheet.create({
     marginTop: 25,
     // fontFamily:
   },
+
   inputContainer:{
     backgroundColor: 'white',
     height: 48,
@@ -56,20 +70,19 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     marginVertical: 20,
   },
+ //search icon
+ iconContainer: {
+  marginHorizontal: 15,
+  
+},
 
-  //search icon
-  iconContainer: {
-    marginHorizontal: 15,
-    
-  },
-
-  textInput:{
+textInput:{
     color: 'gray',
     fontSize: 16,
-      flex: 1,
-      //  borderWidth: 6,
-       height: 40,
-       borderColor: 'gray',
-  },
+    flex: 1,
+   //borderWidth: 6,
+     height: 40,
+   borderColor: 'gray',
+},
 
 });

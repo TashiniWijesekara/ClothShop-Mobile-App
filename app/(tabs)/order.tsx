@@ -6,7 +6,8 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 export default function order() {
   return (
     <View>
-      <Text>order</Text>
+      <Text></Text>
+      <Text>Order</Text>
     </View>
   )
 }
