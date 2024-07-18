@@ -11,7 +11,7 @@ const ProductCart = ({ item , handleLiked}) => {
        <Image source={{uri: item.image}}style={styles.firstImg}/>
        <View style={styles.content}>
           <Text style={styles.title}>{item.title}</Text>
-          <Text style={styles.price}>LKR {item.price}</Text>
+          <Text style={styles.price}>LKR {item.price}.00</Text>
        </View>
       {/* <Image source={require("../assets/images/YelooOutFit.png")}
        style={styles.firstImg}/>

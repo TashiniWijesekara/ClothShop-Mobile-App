@@ -6,13 +6,13 @@ import Category from '@/components/Category'
 import ProductCart from '@/components/ProductCart'
 import data from "../../data/products.json"
 
-const categories = ["Trendig Now","All","New","Mens","Womens"];
+const categories = ["Trendig Now","All","New","Womens","Mens"];
 
 const Home = () => {
     const [products, setProducts] = useState(data.products);
-    const [ selectedCategory,setSelectedCategory] = useState("Mens");
-    const [isLiked,setIsLiked] = useState(false);
-    const hadleLiked = (item) =>{
+    const [ selectedCategory,setSelectedCategory] = useState("Womens");
+    
+    const hadleLiked = (item) => {
       const newProducts = products.map((prod)=>{
           if(prod.id===item.id){
             return{
