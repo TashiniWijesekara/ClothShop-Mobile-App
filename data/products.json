@@ -1,0 +1,40 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "image": "https://i2-prod.irishmirror.ie/incoming/article10550974.ece/ALTERNATES/s615b/Gigi-Hadid-bears-her-midriff-when-wearing-a-canary-yellow-outfit-in-New-York.jpg",
+            "title": "Full Kit",
+            "price": 8900.00
+        },
+        {
+            "id": 2,
+            "image": "https://images.bauerhosting.com/celebrity/sites/3/2021/10/gigi-hadid-string-ting-phone-wrislet-strap.jpg?auto=format&w=1440&q=80",
+            "title": "Crop Top",
+            "price": 7800.00
+        },
+        {
+            "id": 3,
+            "image": "https://i.pinimg.com/736x/5e/9e/3c/5e9e3c9e2538aba9dc17d1c155db1d0a.jpg",
+            "title": "Long Dress",
+            "price": 7550.00
+        },
+        {
+            "id": 4,
+            "image": "https://i.pinimg.com/564x/ee/37/82/ee3782ac4af4a0e7f42fcb7dd14e6a66.jpg",
+            "title": "Denim Skirt",
+            "price": 6700.00
+        },
+        {
+            "id": 5,
+            "title": "GG Jacket",
+            "image": "https://imgix.bustle.com/uploads/getty/2022/7/14/80892520-fffb-41c3-ae11-bea1b2135e9d-getty-1404058878.jpg?w=800&h=1200&fit=crop&crop=focalpoint&fp-x=0.432&fp-y=0.2222",
+            "price": 7800.00
+        },
+        {
+            "id": 6,
+            "image": "https://hollywoodlife.com/wp-content/uploads/2022/08/gigi-hadid-us-open-2022-spl.jpg?w=680",
+            "title": "jump suit",
+            "price": 8800.00
+        }
+    ]
+}

@@ -2,15 +2,16 @@ import { StyleSheet, Text, View , Image , TouchableOpacity } from 'react-native'
 import React, { useState } from 'react'
 import { AntDesign } from '@expo/vector-icons';
 
-const ProductCart = ({ item, isLiked, setIsLiked}) => {
+//const logoImg = require("../assets/images/whityFv.png");
+
+const ProductCart = ({ item , isLiked, setIsLiked}) => {
   // const[isLiked, setIsLiked] = useState(false);
   return (
     <View style={styles.container}>
-      <Image source={require("../assets/images/YelooOutFit.png")} 
-       style={styles.firstImg}/>
+       <Image source={{uri: item.image}}style={styles.firstImg}/>
        <View style={styles.content}>
-          <Text style={styles.title}>Full Kit</Text>
-          <Text style={styles.price}>LKR 9,850.00</Text>
+          <Text style={styles.title}>{item.title}</Text>
+          <Text style={styles.price}>LKR {item.price}</Text>
        </View>
       {/* <Image source={require("../assets/images/YelooOutFit.png")}
        style={styles.firstImg}/>

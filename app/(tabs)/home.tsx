@@ -4,14 +4,15 @@ import Header from '@/components/Header'
 import { Fontisto } from '@expo/vector-icons'
 import Category from '@/components/Category'
 import ProductCart from '@/components/ProductCart'
+import data from "../../data/products.json"
 
 const categories = ["Trendig Now","All","New","Mens","Womens"];
 
 const Home = () => {
-    // const [products, setProducts] = useState(data.products);
-    const [ selectedCategory,setSelectedCategory] = 
-    useState("Mens");
+    const [products, setProducts] = useState(data.products);
+    const [ selectedCategory,setSelectedCategory] = useState("Mens");
     const [isLiked,setIsLiked] = useState(false);
+    const hadleLiked = (item) =>{} 
   return (
     <View style={{height:'100%',backgroundColor: '#FCEEF2',paddingTop:70 }}>
       <Header/>
@@ -48,13 +49,15 @@ const Home = () => {
           />
         </>
           }
-          data={[1, 2, 3, 4, 5, 6]} 
+          // All details image, price .......
+          data={products}   // data={[1, 2, 3, 4, 5, 6]} 
           renderItem={({item,index})=> (
-          <ProductCart item={item} isLiked={isLiked} setIsLiked={setIsLiked} />
+          <ProductCart item={item} isLiked={isLiked} 
+          setIsLiked={setIsLiked} />
            )}
           showsVerticalScrollIndicator={false}
           contentContainerStyle={{
-            paddingBottom: 50,
+            paddingBottom: 150,
           }}
           />
       
