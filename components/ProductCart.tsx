@@ -4,7 +4,7 @@ import { AntDesign } from '@expo/vector-icons';
 
 //const logoImg = require("../assets/images/whityFv.png");
 
-const ProductCart = ({ item , isLiked, setIsLiked}) => {
+const ProductCart = ({ item , handleLiked}) => {
   // const[isLiked, setIsLiked] = useState(false);
   return (
     <View style={styles.container}>
@@ -20,16 +20,20 @@ const ProductCart = ({ item , isLiked, setIsLiked}) => {
           <Text style={styles.price}>LKR 9,850.00</Text>
        </View> */}
 
-       
        {/* heart like container */}
-       <TouchableOpacity onPress={() => {setIsLiked (!isLiked)}} style=
-          {styles.likeContainer}>
-          { isLiked ? (
+      <View style= {styles.likeContainer}>
+       <TouchableOpacity onPress={() => {
+            handleLiked(item);
+       }}
+     >
+          {item?.isLiked ? (
+            //colored heart icon
             <AntDesign name={"heart"} size={20} color={"#FE6C92"}/>
           ) : (
           <AntDesign name={"hearto"} size={20} color={"#FE6C92"}/>
           )}
        </TouchableOpacity>
+       </View> 
     </View>
   );
 };

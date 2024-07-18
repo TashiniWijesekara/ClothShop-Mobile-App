@@ -12,7 +12,19 @@ const Home = () => {
     const [products, setProducts] = useState(data.products);
     const [ selectedCategory,setSelectedCategory] = useState("Mens");
     const [isLiked,setIsLiked] = useState(false);
-    const hadleLiked = (item) =>{} 
+    const hadleLiked = (item) =>{
+      const newProducts = products.map((prod)=>{
+          if(prod.id===item.id){
+            return{
+              ...prod,
+              isLiked: true,
+            };
+          }
+          return prod;
+      });
+      setProducts(newProducts);
+    };
+
   return (
     <View style={{height:'100%',backgroundColor: '#FCEEF2',paddingTop:70 }}>
       <Header/>
@@ -52,8 +64,7 @@ const Home = () => {
           // All details image, price .......
           data={products}   // data={[1, 2, 3, 4, 5, 6]} 
           renderItem={({item,index})=> (
-          <ProductCart item={item} isLiked={isLiked} 
-          setIsLiked={setIsLiked} />
+          <ProductCart item={item} handleLiked={hadleLiked} />
            )}
           showsVerticalScrollIndicator={false}
           contentContainerStyle={{
