@@ -5,7 +5,6 @@ export default function cart() {
   return (
     <View>
       <Text style={styles.nametext}> {"\n"} My Cart</Text>
-      <TextInput style={styles.input} placeholder="Enter your name" />
       
     </View>
   )

@@ -6,19 +6,39 @@ import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { FontAwesome6 } from "@expo/vector-icons";
 import { AntDesign } from "@expo/vector-icons";
 import { NavigationContainer } from "@react-navigation/native";
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { ProductDetails } from "../../screen/ProductDetails";
+//import ProductDetails from "../../screen/ProductDetails";
+
+const Tab = createBottomTabNavigator();
+const Stack = createNativeStackNavigator();
+
+function Home(){
+  return(
+    <View>
+      <Text>Home</Text>
+    </View>
+  );
+}
+const MyHomeStack = ()=>{
+    return(
+      <Stack.Navigator screenOptions={{
+        headerShown:false,
+      }}>
+        <Stack.Screen name="HOME" component={Home} />
+        <Stack.Screen name="PRODUCT_DETAILS" component={ProductDetails} />
+      </Stack.Navigator>
+    );
+  }
 
 export default function TabLayout() {
   return (
-  
-    <Tabs screenOptions={{
+  //<NavigationContainer>
+    //<Tab.Navigator>
+      <Tabs screenOptions={{
             headerShown:false,
             tabBarActiveTintColor: '#F34572',
-
-        // tabBarStyle: {
-        //   backgroundColor: '#191414',
-        //   borderColor: '#191414',
-        //   height:45,
-        // },
 
     }}  >
 
@@ -32,7 +52,9 @@ export default function TabLayout() {
       },
      }} 
      />
-     <Tabs.Screen name="Home"
+     
+     <Tabs.Screen name="Home" 
+      //component={MyHomeStack} 
      options={{
       // tabBarLabel: ({ focused }) => (
       //   <Text style={{ }}> </Text>
@@ -42,6 +64,7 @@ export default function TabLayout() {
       },
      }} 
      />
+     
      <Tabs.Screen name="Order" 
      options={{
       // tabBarLabel: ({ focused }) => (
@@ -72,7 +95,9 @@ export default function TabLayout() {
       ),
    }} 
    />
-    </Tabs>
+      </Tabs>
+   // </Tab.Navigator>
+ // </NavigationContainer>
 
-  )
-}
+  );
+};

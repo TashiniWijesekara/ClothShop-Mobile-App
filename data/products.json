@@ -3,14 +3,14 @@
         {
             "id": 1,
             "image": "https://i2-prod.irishmirror.ie/incoming/article10550974.ece/ALTERNATES/s615b/Gigi-Hadid-bears-her-midriff-when-wearing-a-canary-yellow-outfit-in-New-York.jpg",
-            "title": "Full Kit",
+            "title": "Full OutFit",
             "price": 8900
         },
         {
             "id": 2,
             "image": "https://images.bauerhosting.com/celebrity/sites/3/2021/10/gigi-hadid-string-ting-phone-wrislet-strap.jpg?auto=format&w=1440&q=80",
             "title": "Crop Top",
-            "price": 7800
+            "price": 4100
         },
         {
             "id": 3,
@@ -28,13 +28,38 @@
             "id": 5,
             "title": "GG Jacket",
             "image": "https://imgix.bustle.com/uploads/getty/2022/7/14/80892520-fffb-41c3-ae11-bea1b2135e9d-getty-1404058878.jpg?w=800&h=1200&fit=crop&crop=focalpoint&fp-x=0.432&fp-y=0.2222",
-            "price": 7800
+            "price": 7100
         },
         {
             "id": 6,
             "image": "https://hollywoodlife.com/wp-content/uploads/2022/08/gigi-hadid-us-open-2022-spl.jpg?w=680",
             "title": "jump suit",
             "price": 8800
+        },
+        {
+            "id": 7,
+            "image": "https://celebmafia.com/wp-content/uploads/2022/08/gigi-hadid-street-style-08-04-2022-6.jpg",
+            "title": "Western Shirt",
+            "price": 5800
+        },
+        {
+            "id": 8,
+            "image": "https://i.dailymail.co.uk/1s/2021/09/23/20/48303767-10022421-Fashionable_Gigi_Hadid_26_looked_stylish_in_a_lemon_yellow_co_or-m-44_1632424746045.jpg",
+            "title": "Full OutFit",
+            "price": 6750
+        },
+        {
+            "id": 9,
+            "image": "https://celebmafia.com/wp-content/uploads/2022/08/gigi-hadid-street-style-08-04-2022-8.jpg",
+            "title": "Clove Denim",
+            "price": 6500
+        },
+        {
+            "id": 10,
+            "image": "https://www.celebsfirst.com/wp-content/uploads/2021/06/gigi-hadid-looks-fab-in-an-unbuttoned-pink-shirt-and-blue-jeans-as-she-arrives-back-at-her-apartment-in-new-york-city-240621_2.jpg",
+            "title": "GG Shirt",
+            "price": 5150
         }
+       
     ]
 }

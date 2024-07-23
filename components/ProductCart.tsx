@@ -1,13 +1,15 @@
 import { StyleSheet, Text, View , Image , TouchableOpacity } from 'react-native'
 import React, { useState } from 'react'
 import { AntDesign } from '@expo/vector-icons';
-
-//const logoImg = require("../assets/images/whityFv.png");
+import { useNavigation } from '@react-navigation/native';
 
 const ProductCart = ({ item , handleLiked}) => {
-  // const[isLiked, setIsLiked] = useState(false);
+  const navigation = useNavigation();
   return (
-    <View style={styles.container}>
+
+    <TouchableOpacity onPress={()=>{
+      navigation.navigate("PRODUCT_DETAILS")
+    }} style={styles.container}>
        <Image source={{uri: item.image}}style={styles.firstImg}/>
        <View style={styles.content}>
           <Text style={styles.title}>{item.title}</Text>
@@ -34,7 +36,7 @@ const ProductCart = ({ item , handleLiked}) => {
           )}
        </TouchableOpacity>
        </View> 
-    </View>
+    </TouchableOpacity>
   );
 };
 

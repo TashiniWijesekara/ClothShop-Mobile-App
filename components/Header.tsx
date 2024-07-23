@@ -28,8 +28,8 @@ const styles = StyleSheet.create({
         //app icon round
     appIconContainer: {
         backgroundColor: "white",
-        height: 45,
-        width: 45,
+        height: 43,
+        width: 43,
         borderRadius: 22,
         justifyContent: "center",
         alignItems: "center",

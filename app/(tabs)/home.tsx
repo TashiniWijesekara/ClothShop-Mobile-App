@@ -12,7 +12,7 @@ const Home = () => {
     const [products, setProducts] = useState(data.products);
     const [ selectedCategory,setSelectedCategory] = useState("Womens");
     
-    const hadleLiked = (item) => {
+    const hadleLiked = (item: any) => {
       const newProducts = products.map((prod)=>{
           if(prod.id===item.id){
             return{
