@@ -9,15 +9,23 @@ const ProductDetails = () => {
         <View style={styles.headerContainer}>
           <Header/>
         </View>
-        <Image source={{uri:imageUrl}}/>
+        <Image source={{uri:imageUrl}} style={styles.firstImg}/>
+        <View style={styles.ImgTitle}>
+          <Text>Full OutFit Kit</Text>
+          <Text>LKR 8,900.00</Text>
+        </View>
     </View>
   );
 };
 
-export default ProductDetails
+export default ProductDetails;
 
 const styles = StyleSheet.create({
   headerContainer: {
-
+      padding: 20,
   },
+  firstImg: {
+      width:"100%",
+      height: 420,
+  }
 });
