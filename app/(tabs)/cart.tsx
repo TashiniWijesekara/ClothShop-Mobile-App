@@ -5,11 +5,11 @@ import Header from '@/components/Header'
 const cart = () => {
   return (
     <View style={{height:'100%',backgroundColor: '#FCEEF2',paddingTop:70 }}>
-       <Header/>
+       <Header isCart={true}/>
       <View>
-        <Text></Text>
+        <Text>My Cart</Text>
       </View>
-    </View>
+    </View> //lineGardient
   );
 };
 export default cart;
