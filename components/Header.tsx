@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         justifyContent: "space-between",
         alignItems: "center",
-        // marginTop: 1,
+         marginTop: 0,
     },
         //app icon round
     appIconContainer: {

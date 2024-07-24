@@ -16,7 +16,7 @@ const Index = ()=> {
       <Text style={styles.nametext}>{"\n"} ZANY Clothing </Text>
       <Image style={styles.logo} source={require('../../assets/images/cloth_logo.png')}  />
       <Text></Text>
-      <Text style={styles.welltext}>{"\n"}Welcome To Our Zany Online Clothing Store... </Text>
+      <Text style={styles.welltext}>{"\n"}Welcome To Zany Online Clothing Store... </Text>
       <Text style={styles.introtext}>{"\n"}Zany is a luxury fashion brand. Enter a world of fashion and sophistication 
         tailored just for you. If you are looking for ever trendy fashion, our online store
          offers a diverse collection for every wardrobe.  </Text>

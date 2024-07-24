@@ -1,30 +1,19 @@
-import { View ,Text , StyleSheet, TextInput ,Image } from "react-native";
+import { View ,Text , StyleSheet ,Image } from "react-native";
 import React from 'react'
+import Header from '@/components/Header'
 
-export default function cart() {
+const cart = () => {
   return (
-    <View>
-      <Text style={styles.nametext}> {"\n"} My Cart</Text>
-      
+    <View style={{height:'100%',backgroundColor: '#FCEEF2',paddingTop:70 }}>
+       <Header/>
+      <View>
+        <Text></Text>
+      </View>
     </View>
-  )
-}
+  );
+};
+export default cart;
 
 const styles = StyleSheet.create({
-  nametext: {
-    fontSize: 30,
-    color: 'black',
-    
-  },
-  input: {
-    height: 40,
-    margin: 12,
-    borderWidth: 1,
-    padding: 10,
-  },
   
-  tinyLogo: {
-    width: 50,
-    height: 50,
-  },
-})
+});
