@@ -5,7 +5,7 @@ import CartCard from "@/components/CartCard";
 
 const cart = () => {
   return (
-    <View style={{height:'100%',backgroundColor: '#FCEEF2', paddingTop: 30 }}>
+    <View style={{height:'100%',backgroundColor: '#FCEEF2', paddingTop: 30  }}>
        <View style={styles.headerContainer}>
           <Header isCart={true}/>
        </View>
