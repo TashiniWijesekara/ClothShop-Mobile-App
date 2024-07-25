@@ -1,24 +1,32 @@
-import { View ,Text , StyleSheet ,Image } from "react-native";
+import { View ,Text , StyleSheet ,Image , TouchableOpacity } from "react-native";
 import React from "react";
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import { useNavigation } from "expo-router";
 
-const Header = ({isCart}) => {
+const Header = ({isCart }) => {
+const navigation = useNavigation();
+
     return(
+        
         <View style={styles.container}>
-            <View style={styles.appIconContainer}>
+         
+            <TouchableOpacity onPress={()=>navigation.navigate("Home")} 
+                style={styles.appIconContainer}>
                 {
                     isCart? (
-                <Ionicons name={"chevron-back"} color={"#FE6C92"} size={24}/> 
+                 //back icon to home pge
+                <Ionicons style={styles.backIcon} name={"chevron-back"} color={"#FE6C92"} size={25}/> 
              ): (
                 <Image source={require('../assets/images/Appicon1.png')}
                 style={styles.appIcon}
                 />
                 )}
 
-            </View>
-            <Text style={styles.cartTxt}>My Cart</Text>
+            </TouchableOpacity>
+    
+            { isCart && <Text style={styles.cartTxt}>My Cart</Text> }
             <Image source={require('../assets/images/ggDp.png')}
-                style={styles.dp}
+            style={styles.dp}
                 />
         </View>
     );
@@ -31,7 +39,7 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         justifyContent: "space-between",
         alignItems: "center",
-       // marginTop: 1,
+       // marginTop: 0,
     },
         //app icon round
     appIconContainer: {
@@ -60,4 +68,7 @@ const styles = StyleSheet.create({
         fontSize: 28,
         color: '#FE6C92'
     },
+    backIcon: {
+        marginEnd: 4,
+    }
 });

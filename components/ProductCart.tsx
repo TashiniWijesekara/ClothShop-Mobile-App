@@ -1,14 +1,15 @@
 import { StyleSheet, Text, View , Image , TouchableOpacity } from 'react-native'
 import React, { useState } from 'react'
 import { AntDesign } from '@expo/vector-icons';
-import { useNavigation } from '@react-navigation/native';
+import { useNavigation } from "expo-router";
+// import { useNavigation } from '@react-navigation/native';
 
 const ProductCart = ({ item , handleLiked}) => {
   const navigation = useNavigation();
   return (
 
     <TouchableOpacity onPress={()=>{
-      navigation.navigate("PRODUCT_DETAILS")
+      navigation.navigate("ProductDetails")
     }} style={styles.container}>
        <Image source={{uri: item.image}}style={styles.firstImg}/>
        <View style={styles.content}>

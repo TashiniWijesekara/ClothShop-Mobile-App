@@ -26,7 +26,7 @@ const Home = () => {
     };
 
   return (
-    <View style={{height:'100%',backgroundColor: '#FCEEF2',paddingTop:70 }}>
+    <View style={{height:'100%',backgroundColor: '#FCEEF2',paddingTop: 40 }}>
       <Header/>
 
       {/* product list */}
