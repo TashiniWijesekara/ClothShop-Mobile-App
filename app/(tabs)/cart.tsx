@@ -1,7 +1,8 @@
-import { View ,Text , StyleSheet ,Image, TouchableOpacity } from "react-native";
+import { View ,Text , StyleSheet ,Image, TouchableOpacity ,FlatList} from "react-native";
 import React from 'react'
 import Header from '@/components/Header'
 import CartCard from "@/components/CartCard";
+
 
 const cart = () => {
   return (
@@ -10,10 +11,16 @@ const cart = () => {
        <View style={styles.headerContainer}>
           <Header isCart={true}/>
        </View>
-
-       <CartCard/>
-       <CartCard/>
-       <View style={styles.TotalContainer}>
+       
+        <FlatList 
+        data={[1,2,3,4,5]}ListHeaderComponent={
+      <>
+      </>
+      } 
+        renderItem={CartCard}
+        ListFooterComponent={
+          <>
+                <View style={styles.TotalContainer}>
         <View style={styles.Totaltxt}>
             <Text style={styles.txt}>Total:</Text>
             <Text style={styles.txt}>LKR 8,200.00</Text>
@@ -23,11 +30,19 @@ const cart = () => {
             <Text style={styles.txt}>LKR 0.00</Text>
         </View>
        </View>
-      <View style={styles.line}/>
-      <View style={styles.Totaltxt}>
+       <View style={styles.line}/>
+       <View style={styles.Totaltxt}>
             <Text style={styles.txt}>Grand Total:</Text>
             <Text style={[styles.txt, {color: "black", fontWeight: "500"}]}>LKR 8,200.00</Text>
-        </View>
+      </View>
+          </>
+        }
+        showsVerticalScrollIndicator={false}
+        contentContainerStyle={{
+          paddingBottom: 30,
+        }}
+      />
+
         <TouchableOpacity style={styles.checkOutContainer}>
           <Text style={styles.checkTxt}>CheckOut</Text>
         </TouchableOpacity>
@@ -68,8 +83,9 @@ const styles = StyleSheet.create({
     backgroundColor: '#FE6C92',
     width: "100%",
     marginVertical: 10,
-    borderRadius: 70,
-
+    borderRadius: 80,
+    // marginStart: 20,
+    // marginEnd: 16,
   },
   checkTxt: {
     fontSize: 18,

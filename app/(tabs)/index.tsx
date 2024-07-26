@@ -16,23 +16,23 @@ const Index = ()=> {
       <Text style={styles.nametext}>{"\n"} ZANY Clothing </Text>
       <Image style={styles.logo} source={require('../../assets/images/cloth_logo.png')}  />
       <Text></Text>
-      <Text style={styles.welltext}>{"\n"}Welcome To Zany Online Clothing Store... </Text>
+      <Text style={styles.welltext}>{"\n"}Welcome To Zany Clothing ... </Text>
       <Text style={styles.introtext}>{"\n"}Zany is a luxury fashion brand. Enter a world of fashion and sophistication 
         tailored just for you. If you are looking for ever trendy fashion, our online store
          offers a diverse collection for every wardrobe.  </Text>
          
-         <Text style={styles.introtext}>{"\n"} With a commitment to quality, comfort, and the latest trends,
-           we invite you to explore our virtual aisles and discover your next favorite outfit. 
-           Embrace effortless shopping and impeccable style with Zany Online Clothing store. {"\n"} </Text>
+         <Text style={styles.introtext}>                    With high quality fabric and comfort clothes , We invite you to choose your favorite styles. 
+           Embrace the latest fashion with Zany  online clothing store. {"\n"} {"\n"} </Text>
          
         <Button 
             title="Login Store "
-            color="#F34572"
+            color="#FE6C92"
             onPress={()=>router.push('Home')} 
             
             />
         </View>
       ))}
+      
     </View>
   );
 }
@@ -54,7 +54,10 @@ const styles = StyleSheet.create({
   },
   introtext: {
     fontSize: 15,
-    color: 'black',
+    color: '#3F3E3F',
+    marginStart: 11,
+    marginEnd: 11,
+    //paddingBottom: 10,
     
   },
 
