@@ -2,8 +2,8 @@
     "products": [
         {
             "id": 1,
-            "image": "https://i2-prod.irishmirror.ie/incoming/article10550974.ece/ALTERNATES/s615b/Gigi-Hadid-bears-her-midriff-when-wearing-a-canary-yellow-outfit-in-New-York.jpg",
-            "title": "Full OutFit",
+            "image": "https://www.hellonri.com/images/gallery/full260.jpg",
+            "title": "Long Dress",
             "price": 8900
         },
         {
@@ -20,26 +20,26 @@
         },
         {
             "id": 4,
-            "image": "https://i.pinimg.com/564x/ee/37/82/ee3782ac4af4a0e7f42fcb7dd14e6a66.jpg",
-            "title": "Denim Skirt",
+            "image": "https://assets.vogue.com/photos/56128c2e238b550010c5efa7/master/w_2560%2Cc_limit/_MIC0009.jpg",
+            "title": "Long Dress",
             "price": 6700
         },
         {
             "id": 5,
-            "title": "GG Jacket",
+            "title": "Denim Jacket",
             "image": "https://imgix.bustle.com/uploads/getty/2022/7/14/80892520-fffb-41c3-ae11-bea1b2135e9d-getty-1404058878.jpg?w=800&h=1200&fit=crop&crop=focalpoint&fp-x=0.432&fp-y=0.2222",
             "price": 7100
         },
         {
             "id": 6,
             "image": "https://hollywoodlife.com/wp-content/uploads/2022/08/gigi-hadid-us-open-2022-spl.jpg?w=680",
-            "title": "jump suit",
+            "title": "Jump suit",
             "price": 8800
         },
         {
             "id": 7,
             "image": "https://celebmafia.com/wp-content/uploads/2022/08/gigi-hadid-street-style-08-04-2022-6.jpg",
-            "title": "Western Shirt",
+            "title": "Solid Shirt",
             "price": 5800
         },
         {
@@ -50,16 +50,128 @@
         },
         {
             "id": 9,
-            "image": "https://celebmafia.com/wp-content/uploads/2022/08/gigi-hadid-street-style-08-04-2022-8.jpg",
+            "image": "https://www.abouther.com/sites/default/files/2017/06/29/gigi_hadid_steps_out_in_cropped_top_and_distressed_baggy_denim.jpg",
             "title": "Clove Denim",
             "price": 6500
         },
         {
             "id": 10,
-            "image": "https://www.celebsfirst.com/wp-content/uploads/2021/06/gigi-hadid-looks-fab-in-an-unbuttoned-pink-shirt-and-blue-jeans-as-she-arrives-back-at-her-apartment-in-new-york-city-240621_2.jpg",
-            "title": "GG Shirt",
+            "image": "https://cdn.mos.cms.futurecdn.net/whowhatwear/posts/209221/gigi-hadid-style-209221-1532112961178-square.jpg",
+            "title": "Denim Jacket",
             "price": 5150
+        },
+        {
+            "id": 11,
+            "image": "https://i2-prod.irishmirror.ie/incoming/article10550974.ece/ALTERNATES/s615b/Gigi-Hadid-bears-her-midriff-when-wearing-a-canary-yellow-outfit-in-New-York.jpg",
+            "title": "Full OutFit",
+            "price": 8900
+        },
+        {
+            "id": 12,
+            "image": "https://i2-prod.irishmirror.ie/incoming/article8775808.ece/ALTERNATES/s615b/Gigi-Hadid-walks-by-a-mini-NYPD-police-station-in-New-York-in-her-high-heel-boots-and-leather-bag.jpg",
+            "title": "Wrap Dress",
+            "price": 5990
+        },
+        {
+            "id": 13,
+            "image": "https://cos.h-cdn.co/assets/16/15/1600x1600/square-1460478730-spl-gigi-hadid-01-160412.jpg",
+            "title": "Full OutFit",
+            "price": 8950
+        },
+        {
+            "id": 14,
+            "image": "https://www.gotceleb.com/wp-content/uploads/photos/gigi-hadid/steps-out-with-baby-in-new-york-city/Gigi-Hadid---Steps-out-with-baby-in-New-York-City-18.jpg",
+            "title": "Full OutFit",
+            "price": 6970
+        },
+        {
+            "id": 15,
+            "image": "https://i.pinimg.com/736x/e2/8d/29/e28d295809729619b2df67b29e41ec4c.jpg",
+            "title": "Crop Top",
+            "price": 5150
+        },
+        {
+            "id": 16,
+            "image": "https://i.dailymail.co.uk/1s/2022/07/19/22/60463379-0-image-a-11_1658265183942.jpg",
+            "title": "Cargo Pants",
+            "price": 7050
+        },
+        {
+            "id": 17,
+            "image": "https://i.redd.it/fashion-highlights-gigi-hadids-street-style-v0-gepdn1yx9inb1.jpg?width=736&format=pjpg&auto=webp&s=d2c956ce6de24e723565bda03c01d0fba9add138",
+            "title": "Full OutFit",
+            "price": 7650
+        },
+        {
+            "id": 18,
+            "image": "https://i.pinimg.com/236x/48/a3/15/48a3158b6ad91446ad672d4faef108da.jpg",
+            "title": "Oversized Shirt",
+            "price": 5470
+        },
+        {
+            "id": 19,
+            "image": "https://i.blogs.es/e429b8/dl_u399429_001-copia/1366_2000.jpg",
+            "title": "OverSized Shirt",
+            "price": 4250
+        },
+        {
+            "id": 20,
+            "image": "https://celebmafia.com/wp-content/uploads/2022/07/gigi-hadid-street-style-new-york-city-07-19-2022-5.jpg",
+            "title": "Crop Top",
+            "price": 3500
+        },
+        {
+            "id": 21,
+            "image": "https://assets.vogue.com/photos/5c3ce4f0af4b862d60e27a17/master/pass/00-promo-gigi-hadid.jpg",
+            "title": "T-shirt",
+            "price": 4690
+        },
+        {
+            "id": 22,
+            "image": "https://i.pinimg.com/736x/16/86/9a/16869aeffff39a8fa700cffdcb5e6353.jpg",
+            "title": "Full OutFit",
+            "price": 7750
+           
+        },
+        {
+            "id": 23,
+            "image": "https://imgcdn.oe24.at/202203037006.jpg/XL-Konsole/512.470.869",
+            "title": "Dress",
+            "price": 6220
+        },
+        {
+            "id": 24,
+            "image":  "https://i.pinimg.com/564x/ee/37/82/ee3782ac4af4a0e7f42fcb7dd14e6a66.jpg",
+            "title": "Denim Skirt", 
+            "price": 5820
+        },
+        {
+            "id": 25,
+            "image":  "https://i.pinimg.com/564x/ab/13/a9/ab13a9dc66a8aef44cdf9d3338749cbd.jpg",
+            "title": "Denim Short Skirt", 
+            "price": 4770
+        },
+        {
+            "id": 26,
+            "image": "https://i.pinimg.com/564x/58/ec/a0/58eca0fce1e2611b1799536db76762cf.jpg",
+            "title": " Short Dress", 
+            "price": 5790
+        },
+        {
+            "id": 27,
+            "image": "https://i.pinimg.com/564x/6c/7c/a7/6c7ca7b219d6605a0a804d0d33201094.jpg",
+            "title": "Clove Denim", 
+            "price": 6700
+        },
+        {
+            "id": 28,
+            "image": "https://i.pinimg.com/564x/c9/43/d6/c943d6df4d1e301360415ab1f1b9c4d0.jpg",
+            "title": "Full OutFit", 
+            "price": 8980
         }
-       
+
+
+        
+   
     ]
 }
