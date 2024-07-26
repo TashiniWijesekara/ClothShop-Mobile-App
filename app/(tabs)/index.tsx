@@ -1,7 +1,6 @@
 import { View,Dimensions ,Text , StyleSheet ,Image , Button  } from "react-native";
 import React from "react";
 import { Link, router } from 'expo-router';
-import ProductDetails from '@/screen/ProductDetails';
 
 const Index = ()=> {
   const dimensions = Dimensions.get('window');

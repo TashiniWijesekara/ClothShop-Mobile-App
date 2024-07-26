@@ -12,8 +12,11 @@ const CartCard =()=>{
         <View style={styles.cardContent}>
            <Text style={styles.title} >Crop Top</Text>
            <Text style={styles.price} >LKR 4,100.00</Text>
-           <View>
+        <View style={styles.circleSizeContainer}>
             <View style={styles.circle}/>
+            <View style={styles.sizeCircle}> 
+              <Text style={styles.sizetxt}>M</Text>
+            </View>
         </View>
         </View>
             <FontAwesome6  style={styles.trash} name={"trash-can"} color={"#FE6C92"} size={18}/>
@@ -31,7 +34,7 @@ const styles = StyleSheet.create({
   firstImg: {
     height: 145,
     width:"30%",
-    marginStart: 10,
+    marginStart: 20,
     borderRadius: 10,
   },
   cardContent: {
@@ -60,8 +63,26 @@ const styles = StyleSheet.create({
       marginStart: 15,
   },
   trash: {
-   // marginTop: 22,
+    marginTop: 4,
     marginEnd: 18,
+  },
+  circleSizeContainer: {
+      flexDirection: "row",
+     
+  },
+  sizeCircle: {
+    backgroundColor: 'white',
+    height: 32,
+    width: 32,
+    borderRadius: 16,
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginLeft: 10,
+  },
+  sizetxt: {
+    fontSize: 18,
+    fontWeight: "400",
+    color: '#797577',
   },
 
 });
