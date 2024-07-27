@@ -29,10 +29,11 @@ const MyHomeStack = ()=>{
         <Stack.Screen name="PRODUCT_DETAILS" component={ProductDetails} />
       </Stack.Navigator>
     );
-  }
+  };
 
-export default function TabLayout() {
+const TabLayout = () => {
   return (
+    
   //<NavigationContainer>
     //<Tab.Navigator>
       <Tabs screenOptions={{
@@ -100,3 +101,5 @@ export default function TabLayout() {
 
   );
 };
+
+export default TabLayout;
