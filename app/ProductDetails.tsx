@@ -1,8 +1,7 @@
-import { Image, StyleSheet, Text, View } from 'react-native'
-import React from 'react'
-import Header from '@/components/Header';
-import { TouchableOpacity } from 'react-native-gesture-handler';
-const imageUrl = "https://i2-prod.irishmirror.ie/incoming/article10550974.ece/ALTERNATES/s615b/Gigi-Hadid-bears-her-midriff-when-wearing-a-canary-yellow-outfit-in-New-York.jpg"
+import { Image, StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+import React from 'react';
+import Header from "../components/Header";
+const imageUrl = "https://www.hellonri.com/images/gallery/full260.jpg"
 
 const sizes = ["S", "M", "L", "XL"];
 const ProductDetails = () => {
