@@ -4,6 +4,7 @@ import Header from "../components/Header";
 const imageUrl = "https://www.hellonri.com/images/gallery/full260.jpg"
 
 const sizes = ["S", "M", "L", "XL"];
+const ColorsArray = ["black", "white","#fa086b","#08a2fa","#fafa08","#bfbebe","#fe4040"];
 const ProductDetails = () => {
   const [selectedSize, setSelectedSize] = useState(null);
   return (
@@ -15,7 +16,7 @@ const ProductDetails = () => {
 
         <Image source={{uri:imageUrl}} style={styles.firstImg}/>
         
-        <View style={styles.ImgContainer}>
+        <View style={styles.DetailContainer}>
           <Text style={styles.title}>Full OutFit </Text>
           <Text style={[styles.title, styles.price]}>LKR 8,900.00</Text>
         </View>
@@ -41,6 +42,17 @@ const ProductDetails = () => {
             );
           })}
         </View>
+        <Text style={[styles.title, styles.colorText]}>Colors</Text>
+        <View style={styles.colorContainer}>
+            {
+              ColorsArray.map((color)=> {
+                    return(
+                      <View>
+                        <View style={[styles.circle , {backgroundColor: color }]}/>
+                      </View>
+                    );
+              })}
+        </View>
         
     </View> //linegardient
   );
@@ -56,14 +68,15 @@ const styles = StyleSheet.create({
   },
   firstImg: {
       width:"100%",
-      height: 420,
+      height: 400,
       
   },
-  ImgContainer: {
+  DetailContainer: {
       flexDirection: "row",
       justifyContent: "space-between",
       marginHorizontal: 20,
-      marginVertical: 20,
+      marginVertical: 5,
+      marginBottom: 10,
       
   },
   title: {
@@ -80,7 +93,8 @@ const styles = StyleSheet.create({
   },
   sizeText: {
       marginHorizontal: 20,
-      marginBottom: 10,
+      marginBottom: 2,
+  
   },
   sizeValueContainer: {
       height: 36,
@@ -91,12 +105,31 @@ const styles = StyleSheet.create({
       justifyContent: "center",
       alignItems: "center",
       //marginTop: 10,
+      marginHorizontal: 5,
+      
   },
   sizeValue : {
+   //color: '#3F3E3F',
     fontSize: 18,
     fontWeight: "500",
     //marginStart: 12,
     //marginTop: 5,
+  },
+  colorText: {
+    marginHorizontal: 20,
+    marginBottom: 2,
+    marginTop: 10,
+  },
+  colorContainer: {
+    flexDirection: "row",
+    marginHorizontal: 20,
+
+  },
+  circle: {
+    height: 36,
+    width: 36,
+    borderRadius: 18,
+    marginHorizontal: 5,
   },
 
 });
