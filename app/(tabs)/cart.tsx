@@ -20,7 +20,7 @@ const cart = () => {
         renderItem={CartCard}
         ListFooterComponent={
           <>
-                <View style={styles.TotalContainer}>
+       <View style={styles.TotalContainer}>
         <View style={styles.Totaltxt}>
             <Text style={styles.txt}>Total:</Text>
             <Text style={styles.txt}>LKR 8,200.00</Text>
@@ -81,9 +81,10 @@ const styles = StyleSheet.create({
   },
   checkOutContainer: {
     backgroundColor: '#FE6C92',
-    width: "100%",
+   // width: "100%",
     marginVertical: 10,
     borderRadius: 80,
+    margin:30,
     // marginStart: 20,
     // marginEnd: 16,
   },

@@ -1,4 +1,4 @@
-import { Image, StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+import { Image, StyleSheet, Text, View, TouchableOpacity , Button } from 'react-native';
 import React, { useState } from 'react';
 import Header from "../components/Header";
 const imageUrl = "https://www.hellonri.com/images/gallery/full260.jpg"
@@ -46,6 +46,9 @@ const ProductDetails = () => {
             );
           })}
         </View>
+
+
+        {/* color container */}
         <Text style={[styles.title, styles.colorText]}>Colors</Text>
         <View style={styles.colorContainer}>
             {
@@ -54,15 +57,24 @@ const ProductDetails = () => {
                       <TouchableOpacity onPress={()=> {
                           setSelectedColor(color);
                       }}
-                       style={[styles.circleBorder, selectedColor === color && {borderColor: color},
-                       ]}
-                       >
+                       style={[styles.circleBorder, selectedColor === color && {
+                        borderColor: color,
+                        borderWidth: 2,
+                       },
+                      ]}
+                     >
                         <View style={[styles.circle , {backgroundColor: color }]}/>
                       </TouchableOpacity>
                     );
               })}
         </View>
         
+        {/* bitton container */}
+        <TouchableOpacity style={styles.button}>
+          <Text style={styles.buttonText}>Add To Cart</Text>
+        </TouchableOpacity>
+
+
     </View> //linegardient
   );
 };
@@ -144,14 +156,27 @@ const styles = StyleSheet.create({
     //marginHorizontal: 5,
   },
   circleBorder: {
-    borderWidth: 2,
     height: 45,
     width: 45,
     borderRadius: 24,
     alignItems: "center",
     justifyContent: "center",
     marginHorizontal: 5,
-    borderColor: "#FCEEF2",
+   // borderColor: "#FCEEF2",
   },
+  button: {
+    backgroundColor: "#FE6C92",
+    padding: 9,
+    margin: 20,
+    borderRadius: 40,
+
+  },
+
+  buttonText: {
+      fontSize: 18,
+      fontWeight: "500",
+      color: "white",
+      textAlign: "center",
+  }
 
 });
