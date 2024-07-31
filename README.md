@@ -5,7 +5,7 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
 This clothing shop mobile application developed by using React Native and Expo. 
 
 ## Clothing Shop Mobile App screenshots
-<img>
+
 <img src="https://github.com/user-attachments/assets/7dc63705-9f35-4d20-8427-f0d8f9a65377" width="300" height="650">
 .        .            .          .       .
 <img src="https://github.com/user-attachments/assets/999ea369-cbd2-4345-970d-f4d96b484c3b" width="300" height="650">
