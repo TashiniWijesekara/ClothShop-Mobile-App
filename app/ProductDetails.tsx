@@ -1,12 +1,16 @@
-import { Image, StyleSheet, Text, View, TouchableOpacity , Button } from 'react-native';
+import { Image, StyleSheet, Text, View, TouchableOpacity  } from 'react-native';
 import React, { useState } from 'react';
 import Header from "../components/Header";
-const imageUrl = "https://www.hellonri.com/images/gallery/full260.jpg"
+import { useRoute } from '@react-navigation/native';
+//const imageUrl = "https://www.hellonri.com/images/gallery/full260.jpg"
 
 const sizes = ["S", "M", "L", "XL"];
-const ColorsArray = ["black", "white","#fa086b","#08a2fa","#fafa08",];
+const ColorsArray = ["black", "white","#fa086b","#08a2fa","#fafa08"];
 
 const ProductDetails = () => {
+  const route = useRoute();
+  const item = route.params.item;
+  //console.log(route.params.item);
   const [selectedSize, setSelectedSize] = useState(null);
   const [selectedColor, setSelectedColor] = useState(null);
  
@@ -18,11 +22,11 @@ const ProductDetails = () => {
           <Text></Text>
         </View>
 
-        <Image source={{uri:imageUrl}} style={styles.firstImg}/>
+        <Image source={{uri: item.image}} style={styles.firstImg}/>
         
         <View style={styles.DetailContainer}>
-          <Text style={styles.title}>Full OutFit </Text>
-          <Text style={[styles.title, styles.price]}>LKR 8,900.00</Text>
+          <Text style={styles.title}>{item.title} </Text>
+          <Text style={[styles.title, styles.price]}>LKR {item.price}.00</Text>
         </View>
 
         {/* size container */}

@@ -9,7 +9,7 @@ const ProductCart = ({ item , handleLiked}) => {
   return (
 
     <TouchableOpacity onPress={()=>{
-      navigation.navigate("ProductDetails")
+      navigation.navigate("ProductDetails", {item});
     }} style={styles.container}>
        <Image source={{uri: item.image}}style={styles.firstImg}/>
        <View style={styles.content}>

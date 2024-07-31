@@ -20,11 +20,13 @@ function Home(){
     </View>
   );
 }
-const MyHomeStack = ()=>{
+const MyHomeStack = () => {
     return(
       <Stack.Navigator screenOptions={{
         headerShown:false,
-      }}>
+      }}
+          initialRouteName=""
+      >
         <Stack.Screen name="HOME" component={Home} />
         <Stack.Screen name="PRODUCT_DETAILS" component={ProductDetails} />
       </Stack.Navigator>
