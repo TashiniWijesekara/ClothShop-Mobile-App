@@ -4,11 +4,15 @@ import Header from "../components/Header";
 const imageUrl = "https://www.hellonri.com/images/gallery/full260.jpg"
 
 const sizes = ["S", "M", "L", "XL"];
-const ColorsArray = ["black", "white","#fa086b","#08a2fa","#fafa08","#bfbebe","#fe4040"];
+const ColorsArray = ["black", "white","#fa086b","#08a2fa","#fafa08",];
+
 const ProductDetails = () => {
   const [selectedSize, setSelectedSize] = useState(null);
+  const [selectedColor, setSelectedColor] = useState(null);
+ 
   return (
     <View style={{height:'100%',backgroundColor: '#FCEEF2',paddingTop:40 }}>
+       
         <View style={styles.headerContainer}>
           <Header/>
           <Text></Text>
@@ -33,7 +37,7 @@ const ProductDetails = () => {
               >
                 <Text style={[
                   styles.sizeValue, 
-                  selectedSize == size && { color: "#FE6C92"},
+                  selectedSize == size && { color: "#fa086b"},
           ]}
           >
             {size}
@@ -47,9 +51,14 @@ const ProductDetails = () => {
             {
               ColorsArray.map((color)=> {
                     return(
-                      <View>
+                      <TouchableOpacity onPress={()=> {
+                          setSelectedColor(color);
+                      }}
+                       style={[styles.circleBorder, selectedColor === color && {borderColor: color},
+                       ]}
+                       >
                         <View style={[styles.circle , {backgroundColor: color }]}/>
-                      </View>
+                      </TouchableOpacity>
                     );
               })}
         </View>
@@ -65,10 +74,12 @@ const styles = StyleSheet.create({
       //padding: 20,
       marginEnd: 0,
       marginStart:0,
+    
   },
   firstImg: {
       width:"100%",
-      height: 400,
+      height: 350,
+      //marginTop: 1,
       
   },
   DetailContainer: {
@@ -80,7 +91,7 @@ const styles = StyleSheet.create({
       
   },
   title: {
-      fontSize: 20,
+      fontSize: 18,
       color: "black",
       fontWeight: "300",
   },
@@ -123,13 +134,24 @@ const styles = StyleSheet.create({
   colorContainer: {
     flexDirection: "row",
     marginHorizontal: 20,
+    alignItems: "center",
 
   },
   circle: {
-    height: 36,
-    width: 36,
+    height: 33,
+    width: 33,
     borderRadius: 18,
+    //marginHorizontal: 5,
+  },
+  circleBorder: {
+    borderWidth: 2,
+    height: 45,
+    width: 45,
+    borderRadius: 24,
+    alignItems: "center",
+    justifyContent: "center",
     marginHorizontal: 5,
+    borderColor: "#FCEEF2",
   },
 
 });
