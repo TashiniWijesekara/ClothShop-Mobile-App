@@ -12,8 +12,9 @@ This clothing shop mobile application developed by using React Native and Expo.
 
 <img>
 
-<img src="https://github.com/user-attachments/assets/dba317ba-1a2e-4107-b35c-4afb2a1fa3f2" width="300" height="650">
+<img src="https://github.com/user-attachments/assets/9c682a72-b16d-48f5-9364-57c18c3bfaf9" width="300" height="650">
 .        .            .          .      .
 <img src="https://github.com/user-attachments/assets/7615af67-40ec-4d0f-a6fe-a122961eda5e" width="300" height="650">
+
 
 
